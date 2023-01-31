@@ -17,6 +17,19 @@ public class GameOver {
 		
 		// 4. Tell the user the game is over outside the while loop.
 		
+		
+	while(!gameOver) {	
+		
+	String over = JOptionPane.showInputDialog(null, "Is the game over?");
+	
+	if(over.equals("yes")) {
+		gameOver = true;
+	}
+		
+	}
+	
+	JOptionPane.showMessageDialog(null, "The game is over.");
+		
 	}
 
 }

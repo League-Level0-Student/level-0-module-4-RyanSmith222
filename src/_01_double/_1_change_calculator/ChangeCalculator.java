@@ -23,14 +23,14 @@ public class ChangeCalculator {
 		String stringQua = JOptionPane.showInputDialog(null, "How many quarters do you have?");
 		int intQua = Integer.parseInt(stringQua);
 		
-		int valPen = 1;
 		
-		
-		int ans = intPen ;
 				
-				//+ (intNic*0.05) + (intDim*0.1) + (intQua*0.25);
+			double totalVal = (intPen * 0.01) + (intNic*0.05) + (intDim*0.1) + (intQua*0.25);
 		
 		
+			JOptionPane.showMessageDialog(null, "You have $" + totalVal + ".");
+			
+			
 		
 		// Ask the user how many nickels they have
 
