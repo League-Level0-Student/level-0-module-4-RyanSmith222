@@ -67,10 +67,50 @@ public class GooglyEyes extends PApplet {
     ellipse(219,280, 210,160);	
     ellipse(556,266, 210,160);	 
    
+    int xRight = mouseX;
+    int yRight= mouseY;
+    int xLeft = mouseX;
+    int yLeft = mouseY;
+    
+    
+   if(xLeft < 114) {
+	   xLeft = 114;
+   }
+   
+   if(xLeft > 324) {
+	   xLeft = 324;
+   }
+   
+   if(xRight < 451) {
+	   xRight = 451;
+   }
+   
+   if(xRight > 661) {
+	   xRight = 661;
+   }
+//   
+   if(yLeft < 200) {
+	   yLeft = 200;
+   }
+   
+   if(yLeft > 330) {
+	   yLeft = 330;
+   }
+   
+   if(yRight < 216) {
+	   yRight = 216;
+   }
+   
+   if(yRight > 316) {
+	   yRight = 316;
+   }
+    
     noStroke();
     fill(0,0,0);
-    ellipse(219,280, 50,50);	
-    ellipse(556,266, 50,50);	
+  //  ellipse(219,280, 50,50);	
+  //  ellipse(556,266, 50,50);	
+    ellipse(xRight,yRight, 50,50);	
+      ellipse(xLeft,yLeft, 50,50);
     }
 
     static public void main(String[] args) {

@@ -4,6 +4,10 @@ package _03_char._2_string_methods;
 public class StringMethods {
 	public static void main(String[] args) {
 		
+	String the = "the";	
+	the.charAt(3);
+	the.length();
+
 		// 1. Create a String variable and initialize it to contain a minimum of 3 characters
 
 		// 2. Print the 3rd char of your String to the console.
