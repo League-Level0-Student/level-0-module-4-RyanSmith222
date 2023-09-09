@@ -5,9 +5,27 @@ public class StringMethods {
 	public static void main(String[] args) {
 		
 	String the = "the";	
-	the.charAt(3);
-	the.length();
 
+	String letter = "h";
+
+	System.out.println(the.charAt(2));
+	
+	for(int i = 0; i < the.length(); i++ ) {
+		System.out.println(the.charAt(i));
+		if(letter.charAt(0) == the.charAt(i)) {
+			System.out.println(letter + " is at index " + i + ".");
+	}
+	
+	}
+	
+	////////for( int b= 0; b < the.length(); b++) {
+		
+	//	}
+		
+	
+	
+	
+	
 		// 1. Create a String variable and initialize it to contain a minimum of 3 characters
 
 		// 2. Print the 3rd char of your String to the console.
@@ -28,7 +46,11 @@ public class StringMethods {
 		//    EXAMPLE: if your string is "abc" and you are searching 
 		//             for char 'b', then print "b is at index 1"
 		
+	
+
+
 	}
+	
 }
-
-
+	
+	
